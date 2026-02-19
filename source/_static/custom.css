@@ -1,0 +1,217 @@
+/* Thème personnalisé PAGOC MOOC */
+:root {
+  /* Couleurs principales */
+  --primary-color: #A3E635;
+  --primary-hover: #8BC34A;
+  --primary-light: #C5E1A5;
+  
+  /* Couleurs secondaires */
+  --secondary-color: #F3F4F6;
+  --secondary-hover: #E5E7EB;
+  --text-dark: #1F2937;
+  --text-light: #6B7280;
+  
+  /* Couleurs de fond */
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F9FAFB;
+  --bg-tertiary: #F3F4F6;
+}
+
+/* Header et navigation */
+.wy-nav-top {
+  background: var(--primary-color) !important;
+}
+
+.wy-nav-side {
+  background: var(--bg-primary) !important;
+  border-right: 1px solid var(--secondary-color) !important;
+}
+
+.wy-side-nav-search {
+  background: var(--primary-color) !important;
+}
+
+.wy-side-nav-search input[type="text"] {
+  background: var(--bg-primary) !important;
+  border: 1px solid var(--primary-light) !important;
+}
+
+/* Boutons principaux */
+.btn {
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.btn:hover {
+  background: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+}
+
+.btn-neutral {
+  background: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  color: white !important;
+}
+
+.btn-neutral:hover {
+  background: var(--primary-hover) !important;
+  border-color: var(--primary-hover) !important;
+}
+
+/* Liens */
+a {
+  color: var(--primary-color) !important;
+}
+
+a:hover {
+  color: var(--primary-hover) !important;
+}
+
+a:visited {
+  color: var(--primary-color) !important;
+}
+
+/* Menu de navigation */
+.wy-menu-vertical a {
+  color: var(--text-dark) !important;
+}
+
+.wy-menu-vertical a:hover {
+  background: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.wy-menu-vertical a:active {
+  background: var(--primary-color) !important;
+  color: white !important;
+}
+
+.wy-menu-vertical li.current > a {
+  background: var(--primary-color) !important;
+  color: white !important;
+  border-left: 4px solid var(--primary-hover) !important;
+}
+
+.wy-menu-vertical li.current > a:hover {
+  background: var(--primary-hover) !important;
+}
+
+/* Icônes */
+.fa {
+  color: var(--primary-color) !important;
+}
+
+.icon {
+  color: var(--primary-color) !important;
+}
+
+/* Titres et textes */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-dark) !important;
+}
+
+h1 {
+  border-bottom: 2px solid var(--primary-color) !important;
+}
+
+h2 {
+  border-bottom: 1px solid var(--secondary-color) !important;
+}
+
+/* Code */
+.rst-content code {
+  background: var(--secondary-color) !important;
+  border: 1px solid var(--secondary-hover) !important;
+  color: var(--text-dark) !important;
+}
+
+.rst-content tt {
+  background: var(--secondary-color) !important;
+  border: 1px solid var(--secondary-hover) !important;
+  color: var(--text-dark) !important;
+}
+
+/* Notes et alertes */
+.admonition {
+  background: var(--bg-secondary) !important;
+  border-left: 4px solid var(--primary-color) !important;
+}
+
+.admonition-title {
+  background: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Tables */
+.rst-content table.docutils {
+  border: 1px solid var(--secondary-color) !important;
+}
+
+.rst-content table.docutils th {
+  background: var(--secondary-color) !important;
+  color: var(--text-dark) !important;
+}
+
+.rst-content table.docutils td {
+  border: 1px solid var(--secondary-hover) !important;
+}
+
+/* Footer */
+.wy-footer {
+  background: var(--bg-tertiary) !important;
+  color: var(--text-light) !important;
+}
+
+/* Barre de recherche */
+.wy-side-nav-search .wy-dropdown > a,
+.wy-side-nav-search > a {
+  color: white !important;
+}
+
+/* Boutons de navigation */
+.rst-content .toctree-wrapper .toctree-l1 > a {
+  color: var(--primary-color) !important;
+  border: 1px solid var(--secondary-color) !important;
+  background: var(--bg-primary) !important;
+}
+
+.rst-content .toctree-wrapper .toctree-l1 > a:hover {
+  background: var(--secondary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+/* Images */
+.rst-content img {
+  border: 1px solid var(--secondary-color) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* Citations */
+.rst-content blockquote {
+  border-left: 4px solid var(--primary-color) !important;
+  background: var(--bg-secondary) !important;
+  color: var(--text-dark) !important;
+}
+
+/* Notes de bas de page */
+.rst-content .footnote {
+  background: var(--bg-secondary) !important;
+  border: 1px solid var(--secondary-color) !important;
+}
+
+/* Version mobile */
+@media screen and (max-width: 768px) {
+  .wy-nav-top {
+    background: var(--primary-color) !important;
+  }
+  
+  .wy-nav-side {
+    background: var(--bg-primary) !important;
+  }
+  
+  .wy-side-nav-search {
+    background: var(--primary-color) !important;
+  }
+}
