@@ -1,20 +1,20 @@
-/* Thème personnalisé PAGOC MOOC */
+/* Thème personnalisé PAGOC MOOC - Bleu Institutionnel Moderne */
 :root {
   /* Couleurs principales */
-  --primary-color: #A3E635;
-  --primary-hover: #8BC34A;
-  --primary-light: #C5E1A5;
+  --primary-color: #1778B5;
+  --primary-hover: #125C8A;
+  --primary-light: #4FA3D1;
   
   /* Couleurs secondaires */
-  --secondary-color: #F3F4F6;
-  --secondary-hover: #E5E7EB;
+  --secondary-color: #4FA3D1;
+  --secondary-hover: #3B8ABF;
   --text-dark: #1F2937;
   --text-light: #6B7280;
   
   /* Couleurs de fond */
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #F9FAFB;
-  --bg-tertiary: #F3F4F6;
+  --bg-primary: #F8FAFC;
+  --bg-secondary: #FFFFFF;
+  --bg-tertiary: #F1F5F9;
 }
 
 /* Header et navigation */
@@ -32,8 +32,9 @@
 }
 
 .wy-side-nav-search input[type="text"] {
-  background: var(--bg-primary) !important;
+  background: var(--bg-secondary) !important;
   border: 1px solid var(--primary-light) !important;
+  color: var(--text-dark) !important;
 }
 
 /* Boutons principaux */
@@ -57,6 +58,18 @@
 .btn-neutral:hover {
   background: var(--primary-hover) !important;
   border-color: var(--primary-hover) !important;
+}
+
+/* Boutons secondaires */
+.btn-secondary {
+  background: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+  color: white !important;
+}
+
+.btn-secondary:hover {
+  background: var(--secondary-hover) !important;
+  border-color: var(--secondary-hover) !important;
 }
 
 /* Liens */
@@ -97,13 +110,18 @@ a:visited {
   background: var(--primary-hover) !important;
 }
 
-/* Icônes */
+/* Icônes et badges */
 .fa {
   color: var(--primary-color) !important;
 }
 
 .icon {
   color: var(--primary-color) !important;
+}
+
+.badge {
+  background: var(--secondary-color) !important;
+  color: white !important;
 }
 
 /* Titres et textes */
@@ -119,16 +137,20 @@ h2 {
   border-bottom: 1px solid var(--secondary-color) !important;
 }
 
+h3, h4, h5, h6 {
+  color: var(--primary-color) !important;
+}
+
 /* Code */
 .rst-content code {
-  background: var(--secondary-color) !important;
-  border: 1px solid var(--secondary-hover) !important;
+  background: var(--bg-tertiary) !important;
+  border: 1px solid var(--secondary-color) !important;
   color: var(--text-dark) !important;
 }
 
 .rst-content tt {
-  background: var(--secondary-color) !important;
-  border: 1px solid var(--secondary-hover) !important;
+  background: var(--bg-tertiary) !important;
+  border: 1px solid var(--secondary-color) !important;
   color: var(--text-dark) !important;
 }
 
@@ -150,17 +172,36 @@ h2 {
 
 .rst-content table.docutils th {
   background: var(--secondary-color) !important;
-  color: var(--text-dark) !important;
+  color: white !important;
 }
 
 .rst-content table.docutils td {
   border: 1px solid var(--secondary-hover) !important;
+  background: var(--bg-secondary) !important;
 }
 
 /* Footer */
 .wy-footer {
   background: var(--bg-tertiary) !important;
   color: var(--text-light) !important;
+}
+
+/* Masquer complètement le footer de Sphinx */
+.wy-footer .rst-footer-buttons,
+.wy-footer hr,
+.wy-footer div[role="contentinfo"],
+.wy-footer p {
+  display: none !important;
+}
+
+/* Footer personnalisé */
+.wy-footer::after {
+  content: "© 2026, Kaeyros Analytics. Tous droits réservés.";
+  display: block;
+  text-align: center;
+  padding: 20px 0;
+  color: var(--text-light) !important;
+  font-size: 14px;
 }
 
 /* Barre de recherche */
@@ -173,7 +214,7 @@ h2 {
 .rst-content .toctree-wrapper .toctree-l1 > a {
   color: var(--primary-color) !important;
   border: 1px solid var(--secondary-color) !important;
-  background: var(--bg-primary) !important;
+  background: var(--bg-secondary) !important;
 }
 
 .rst-content .toctree-wrapper .toctree-l1 > a:hover {
@@ -199,6 +240,15 @@ h2 {
 .rst-content .footnote {
   background: var(--bg-secondary) !important;
   border: 1px solid var(--secondary-color) !important;
+}
+
+/* Éléments informatifs */
+.info-box {
+  background: var(--secondary-color) !important;
+  border: 1px solid var(--primary-color) !important;
+  color: white !important;
+  padding: 10px;
+  border-radius: 4px;
 }
 
 /* Version mobile */

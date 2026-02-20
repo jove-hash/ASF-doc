@@ -7,8 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'PAGOC MOOC - Guide Utilisateur'
-copyright = '2025, PAGOC MOOC'
-author = 'PAGOC MOOC'
+copyright = '2026, Kaeyros Analytics'
+author = 'Kaeyros Analytics'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
